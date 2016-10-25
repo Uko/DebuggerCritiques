@@ -1,0 +1,21 @@
+{
+	"category" : "Seminar-Kevin",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TViewModel classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"selection",
+		"scrollValue",
+		"announcer",
+		"classIsMeta",
+		"enabled",
+		"method" ],
+	"name" : "RubPluggableTextMorphExample2",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"traitcomposition" : "TViewModel",
+	"type" : "normal" }
