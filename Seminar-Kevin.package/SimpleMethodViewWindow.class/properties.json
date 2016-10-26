@@ -6,11 +6,11 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"announcer",
 		"method",
-		"selection" ],
-	"name" : "RubPluggableTextMorphExample2",
+		"editor",
+		"editingMode" ],
+	"name" : "SimpleMethodViewWindow",
 	"pools" : [
 		 ],
-	"super" : "Model",
+	"super" : "StandardWindow",
 	"type" : "normal" }
