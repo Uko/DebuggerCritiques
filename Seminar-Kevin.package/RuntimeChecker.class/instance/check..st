@@ -1,8 +1,5 @@
 as yet unclassified
 check: context
-
-
-	"(self isConcatError: context) ifTrue: [ "
-		^ { ReRuntimeError new } "]"
-
-	
+	(self isConcatError: context)
+		ifNotNil: [ :msg | ^ {(ReConcatenationError new title: msg)} ]
+		ifNil: [ ^ {} ]

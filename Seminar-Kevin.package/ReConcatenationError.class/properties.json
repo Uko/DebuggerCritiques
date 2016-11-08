@@ -1,0 +1,14 @@
+{
+	"category" : "Seminar-Kevin",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"title" ],
+	"name" : "ReConcatenationError",
+	"pools" : [
+		 ],
+	"super" : "ReProperty",
+	"type" : "normal" }
