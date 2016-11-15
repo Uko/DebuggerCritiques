@@ -1,13 +1,11 @@
 as yet unclassified
 isConcatError: aContext
-	| notIndexable notIndexableContext concatenation concatenationContext |
-	notIndexable := Object >> #errorNotIndexable.
-	concatenation := SequenceableCollection >> #,.
-	notIndexableContext := aContext sender.
-	concatenationContext := aContext sender sender sender sender.
-	"concatenationContext := self stackAtDistance: 4."
-	(notIndexableContext method = notIndexable
-		and: [ concatenationContext method = concatenation ])
-		ifTrue: [ ^ '''' , concatenationContext receiver , ''' cannot be concatenated with '
-				, aContext receiver asString ]
+	| notIndexableContext concatenationContext |
+	notIndexableContext := self context: aContext descendBy: 1.
+	concatenationContext := self context: aContext descendBy: 4.
+	(notIndexableContext method = (Object >> #errorNotIndexable)
+		and: [ concatenationContext method = (SequenceableCollection >> #,) ])
+		ifTrue: [ ^ ReConcatenationError new
+				title: '''' , concatenationContext receiver , ''' cannot be concatenated with ' , aContext receiver asString;
+				errorContext: (self context: aContext descendBy: 5) yourself ]
 		ifFalse: [ ^ nil ]

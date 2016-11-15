@@ -1,0 +1,15 @@
+{
+	"category" : "Seminar-Kevin",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"title",
+		"errorContext" ],
+	"name" : "ReAdditionError",
+	"pools" : [
+		 ],
+	"super" : "ReProperty",
+	"type" : "normal" }
