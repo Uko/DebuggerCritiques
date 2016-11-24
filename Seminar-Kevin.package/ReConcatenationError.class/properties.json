@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"title",
-		"errorContext" ],
+		 ],
 	"name" : "ReConcatenationError",
 	"pools" : [
 		 ],
-	"super" : "ReProperty",
+	"super" : "ReRuntimeError",
 	"type" : "normal" }

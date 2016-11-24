@@ -1,9 +1,7 @@
 view
 show: aMethod
 	(aMethod isKindOf: CompiledMethod) ifTrue: [
-		self setMethodEditingModeFor: aMethod.
-		self setText: aMethod sourceCode.
-		aMethod annotateRubricText: self model.
+		self setMethod: aMethod
 	] ifFalse: [
 		self model setText: aMethod printString.
 		self setTextEditingMode
