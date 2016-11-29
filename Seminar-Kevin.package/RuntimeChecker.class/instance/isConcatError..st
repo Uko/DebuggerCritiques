@@ -1,4 +1,4 @@
-as yet unclassified
+validation
 isConcatError: aContext
 	| notIndexableContext concatenationContext |
 	notIndexableContext := self context: aContext descendBy: 1.

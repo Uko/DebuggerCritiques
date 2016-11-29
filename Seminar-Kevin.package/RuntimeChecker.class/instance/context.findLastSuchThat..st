@@ -1,4 +1,4 @@
-as yet unclassified
+helper
 context: aContext findLastSuchThat: aBlock
 	| tempContext |
 	tempContext := aContext.

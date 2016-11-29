@@ -1,4 +1,4 @@
-as yet unclassified
+helper
 context: aContext descendBy: aNumber
 	| tempContext |
 	tempContext := aContext.

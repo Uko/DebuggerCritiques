@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"title",
-		"errorContext" ],
+		 ],
 	"name" : "ReNilError",
 	"pools" : [
 		 ],
-	"super" : "ReProperty",
+	"super" : "ReRuntimeError",
 	"type" : "normal" }
