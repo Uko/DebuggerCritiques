@@ -4,7 +4,9 @@ isAdditionError: aContext
 	adaptToIntegerAndSendContext := self
 		context: aContext
 		findLastSuchThat: [ :c | c method = (Object >> #adaptToInteger:andSend:) ].
+	(adaptToIntegerAndSendContext) ifNil: [ ^nil ].
 	additionContext := self context: adaptToIntegerAndSendContext descendBy: 1.
+	(additionContext) ifNil: [ ^nil ].
 	additionContext method = (Integer >> #+)
 		ifTrue: [ ^ ReAdditionError new
 				title: adaptToIntegerAndSendContext receiver asString , ' cannot be added to ' , additionContext receiver asString;
