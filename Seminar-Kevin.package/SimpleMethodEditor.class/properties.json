@@ -1,0 +1,14 @@
+{
+	"category" : "Seminar-Kevin",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"editingMode" ],
+	"name" : "SimpleMethodEditor",
+	"pools" : [
+		 ],
+	"super" : "RubPluggableTextMorph",
+	"type" : "normal" }

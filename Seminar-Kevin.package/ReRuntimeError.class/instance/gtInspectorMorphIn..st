@@ -10,6 +10,6 @@ gtInspectorMorphIn: composite
 	morphPresentation := composite morph.
 	morphPresentation
 		title: 'Location';
-		display: [ SimpleMethodViewWindow new
-				setMethod: self errorContext;
-				yourself ]
+		display: [ (SimpleMethodViewWindow new
+				setMethod: self errorContext) editor
+				 ]
