@@ -6,8 +6,8 @@ check: context
 		(self class >> #isConcatError:).
 		(self class >> #isNilError:).
 	}.
-	this := self.
-	^ checks flatCollect: [ :check | check valueWithReceiver: this arguments: #(context) ]
+	"this := self."
+	^ (checks collect: [ :check | check valueWithReceiver: self arguments: {context} ]) select: #notNil
 	" TODO Kevin
 		This gets ugly real quick. What we could do here is have all the check methods
 		in a collection (so for example, have a method checks that returns
