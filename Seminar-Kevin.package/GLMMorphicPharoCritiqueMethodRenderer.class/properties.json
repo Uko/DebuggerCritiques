@@ -1,0 +1,14 @@
+{
+	"category" : "Seminar-Kevin",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"editingMode" ],
+	"name" : "GLMMorphicPharoCritiqueMethodRenderer",
+	"pools" : [
+		 ],
+	"super" : "GLMMorphicPharoMethodRenderer",
+	"type" : "normal" }

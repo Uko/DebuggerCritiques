@@ -1,0 +1,3 @@
+*Seminar-Kevin
+renderPharoCritiqueMethodPresentation: aSmalltalkMethodPresentation 
+	^ GLMMorphicPharoCritiqueMethodRenderer render: aSmalltalkMethodPresentation from: self
