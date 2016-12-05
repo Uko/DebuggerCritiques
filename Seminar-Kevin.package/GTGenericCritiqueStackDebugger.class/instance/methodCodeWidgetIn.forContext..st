@@ -7,4 +7,7 @@ methodCodeWidgetIn: composite forContext: aContext
 		doItReceiver: [ aContext receiver ];
 		doItContext: [  aContext ];
 		editingMode: [ RubSmalltalkCodeMode new classOrMetaClass: aContext methodClass ];
-		textModel: [ :aTextModel | aContext method annotateRubricText: aTextModel ]
+		textModel: [ :aTextModel |
+			aContext method annotateRubricText: aTextModel.
+			"aContext annotateRubricText: aTextModel." "TODO Kevin: Re-enable this after testing out the changes. "
+		]

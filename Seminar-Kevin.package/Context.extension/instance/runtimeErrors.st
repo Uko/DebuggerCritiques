@@ -1,5 +1,4 @@
 *Seminar-Kevin
 runtimeErrors
-	"<eProperty>"
-	self flag: 'reenable once the critiques are implemented correctly'.
+	<eProperty>
 	^ RuntimeChecker new check: self
