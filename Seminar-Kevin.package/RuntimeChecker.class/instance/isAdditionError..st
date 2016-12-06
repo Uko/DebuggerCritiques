@@ -1,6 +1,6 @@
 validation
 isAdditionError: aContext
-	| adaptToIntegerAndSendContext additionContext |
+	| adaptToIntegerAndSendContext additionContext errorContext |
 	adaptToIntegerAndSendContext := self
 		context: aContext
 		findLastSuchThat: [ :c | c method = (Object >> #adaptToInteger:andSend:) ].
@@ -8,7 +8,10 @@ isAdditionError: aContext
 	additionContext := self context: adaptToIntegerAndSendContext descendBy: 1.
 	(additionContext) ifNil: [ ^nil ].
 	additionContext method = (Integer >> #+)
-		ifTrue: [ ^ ReAdditionError new
+		ifTrue: [ 
+			errorContext := self context: additionContext descendBy: 2.
+			^ ReAdditionError new
 				title: adaptToIntegerAndSendContext receiver asString , ' cannot be added to ' , additionContext receiver asString;
-				errorContext: (self context: additionContext descendBy: 2) yourself ]
+				errorContext: errorContext;
+				initializeSourceAnchor: (ReSourceAnchor new initializeEnitity: errorContext method) yourself ]
 		ifFalse: [ ^ nil ]

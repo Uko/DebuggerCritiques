@@ -1,11 +1,14 @@
 validation
 isConcatError: aContext
-	| notIndexableContext concatenationContext |
+	| notIndexableContext concatenationContext errorContext|
 	notIndexableContext := self context: aContext descendBy: 1.
 	concatenationContext := self context: aContext descendBy: 4.
 	(notIndexableContext method = (Object >> #errorNotIndexable)
 		and: [ concatenationContext method = (SequenceableCollection >> #,) ])
-		ifTrue: [ ^ ReConcatenationError new
+		ifTrue: [ 
+			errorContext := self context: aContext descendBy: 5.
+			^ ReConcatenationError new
 				title: '''' , concatenationContext receiver , ''' cannot be concatenated with ' , aContext receiver asString;
-				errorContext: (self context: aContext descendBy: 5) yourself ]
+				errorContext: errorContext;
+				initializeSourceAnchor: (ReSourceAnchor new initializeEnitity: errorContext method) yourself ]
 		ifFalse: [ ^ nil ]
