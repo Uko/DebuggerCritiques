@@ -14,14 +14,14 @@ gtConstructDebuggerInspectorWithIssuesIn: composite for: aDebugger
 					(cs flatCollect: [ :each | each externalProperties ]),
 					(cs flatCollect: [ :each | each method externalProperties ])
 				];
-			column: '' evaluated: [:each :entity | each icon] width: 16;
+			column: '' evaluated: #icon width: 16;
 			column: 'Type' evaluated: [:each :entity | 
 				(each class inheritsFrom: ReAbstractCritique) ifTrue: ['static'] ifFalse: [
 					(each class inheritsFrom: ReRuntimeError) ifTrue: ['dynamic'] ifFalse: ['']
 				]
 			] width: 55;
-			column: 'Class' evaluated: [:each :entity | each class ];
-			column: 'Title' evaluated: [:each :entity | each title ].
+			column: 'Class' evaluated: #class;
+			column: 'Title' evaluated: #title.
 			a custom: (aDebugger class variablesBrowserClass new 
 				debugger: aDebugger;
 				title: 'Variables';
