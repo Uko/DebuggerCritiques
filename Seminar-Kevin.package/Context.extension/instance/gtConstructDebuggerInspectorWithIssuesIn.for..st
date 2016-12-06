@@ -7,14 +7,21 @@ gtConstructDebuggerInspectorWithIssuesIn: composite for: aDebugger
 		debugger: aDebugger;
 		notifyPaneRemoved: true;
 		showFirst: [ :a |
-			a list title: 'Issues';
-				display: [
+			a table title: 'Issues';
+			display: [
 					| cs |
 					cs := aDebugger interruptedContext allContexts.
 					(cs flatCollect: [ :each | each externalProperties ]),
 					(cs flatCollect: [ :each | each method externalProperties ])
 				];
-				format: #title.
+			column: '' evaluated: [:each :entity | each icon] width: 16;
+			column: 'Type' evaluated: [:each :entity | 
+				(each class inheritsFrom: ReAbstractCritique) ifTrue: ['static'] ifFalse: [
+					(each class inheritsFrom: ReRuntimeError) ifTrue: ['dynamic'] ifFalse: ['']
+				]
+			] width: 55;
+			column: 'Class' evaluated: [:each :entity | each class ];
+			column: 'Title' evaluated: [:each :entity | each title ].
 			a custom: (aDebugger class variablesBrowserClass new 
 				debugger: aDebugger;
 				title: 'Variables';
