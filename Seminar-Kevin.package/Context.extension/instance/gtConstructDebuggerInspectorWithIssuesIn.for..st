@@ -20,7 +20,7 @@ gtConstructDebuggerInspectorWithIssuesIn: composite for: aDebugger
 					(each class inheritsFrom: ReRuntimeError) ifTrue: ['dynamic'] ifFalse: ['']
 				]
 			] width: 55;
-			column: 'Class' evaluated: #class;
+			column: 'Class' evaluated: [ :each | each sourceAnchor sourceEntity name ];
 			column: 'Title' evaluated: #title.
 			a custom: (aDebugger class variablesBrowserClass new 
 				debugger: aDebugger;
