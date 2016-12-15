@@ -1,0 +1,14 @@
+{
+	"category" : "Seminar-Kevin",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SouthParkElementary",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
