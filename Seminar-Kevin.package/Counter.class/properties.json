@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"title",
-		"errorContext",
-		"targetContext" ],
-	"name" : "ReRuntimeError",
+		 ],
+	"name" : "Counter",
 	"pools" : [
 		 ],
-	"super" : "ReReplaceNodeCritique",
+	"super" : "Object",
 	"type" : "normal" }

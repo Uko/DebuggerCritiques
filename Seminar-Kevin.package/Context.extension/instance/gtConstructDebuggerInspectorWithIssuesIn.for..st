@@ -16,8 +16,8 @@ gtConstructDebuggerInspectorWithIssuesIn: composite for: aDebugger
 				];
 			column: '' evaluated: #icon width: 16;
 			column: 'Type' evaluated: [:each :entity | 
-				(each class inheritsFrom: ReAbstractCritique) ifTrue: ['static'] ifFalse: [
-					(each class inheritsFrom: ReRuntimeError) ifTrue: ['dynamic'] ifFalse: ['']
+				(each class inheritsFrom: ReRuntimeError) ifTrue: ['dynamic'] ifFalse: [
+					(each class inheritsFrom: ReAbstractCritique) ifTrue: ['static'] ifFalse: ['other']
 				]
 			] width: 55;
 			column: 'Class' evaluated: [ :each | each sourceAnchor sourceEntity name ];

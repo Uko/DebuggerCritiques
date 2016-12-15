@@ -1,0 +1,3 @@
+instance creation
+label
+	^ 'number: '
