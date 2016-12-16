@@ -1,0 +1,3 @@
+StaticCritiques
+uppercaseBoolean
+	^ True

@@ -1,4 +1,4 @@
-Demo
+DynamicCritiques
 getGrades
 	|gradesDictionary|
 	gradesDictionary := Dictionary new.
