@@ -4,21 +4,24 @@ gtConstructDebuggerInspectorWithActionsAndIssuesIn: composite for: aDebugger
 		debugger: aDebugger;
 		notifyPaneRemoved: true;
 		showFirst: [ :a |
-			a table title: 'Issues';
-			display: [
-					| cs |
-					cs := aDebugger interruptedContext allContexts.
-					(cs flatCollect: [ :each | each externalProperties ]),
-					(cs flatCollect: [ :each | each method externalProperties ])
-				];
-			column: '' evaluated: #icon width: 16;
-			column: 'Type' evaluated: [:each :entity | 
-				(each class inheritsFrom: ReRuntimeError) ifTrue: ['dynamic'] ifFalse: [
-					(each class inheritsFrom: ReAbstractCritique) ifTrue: ['static'] ifFalse: ['other']
-				]
-			] width: 55;
-			column: 'Class' evaluated: [ :each | each sourceAnchor sourceEntity name ];
-			column: 'Title' evaluated: #title.
+			| static dynamic |
+			static := aDebugger interruptedContext allContexts flatCollect: [ :each | each method externalProperties ].
+			dynamic := aDebugger interruptedContext allContexts flatCollect: [ :each | each externalProperties ].
+			
+			dynamic ifNotEmpty: [
+				a table title: 'Exception critiques';
+				display: [ dynamic ];
+				column: '' evaluated: #icon width: 16;
+				column: 'Class' evaluated: [ :each | each sourceAnchor sourceEntity name ];
+				column: 'Title' evaluated: #title.
+			].
+			static ifNotEmpty: [
+				a table title: 'Stack critiques';
+				display: [ static ];
+				column: '' evaluated: #icon width: 16;
+				column: 'Class' evaluated: [ :each | each sourceAnchor sourceEntity name ];
+				column: 'Title' evaluated: #title.
+			].
 			a custom: (aDebugger class variablesBrowserClass new 
 				debugger: aDebugger;
 				title: 'Variables';
