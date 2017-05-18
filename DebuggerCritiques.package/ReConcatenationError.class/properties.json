@@ -1,0 +1,15 @@
+{
+	"classtraitcomposition" : "TReRuntimeError classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"concatContext"
+	],
+	"name" : "ReConcatenationError",
+	"commentStamp" : "",
+	"super" : "ReRuntimeError",
+	"traitcomposition" : "TReRuntimeError",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "DebuggerCritiques"
+}

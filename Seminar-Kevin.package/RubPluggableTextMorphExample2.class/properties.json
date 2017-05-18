@@ -1,16 +1,15 @@
 {
-	"category" : "Seminar-Kevin",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "Model",
+	"category" : "Seminar-Kevin",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"announcer",
 		"method",
-		"selection" ],
+		"selection"
+	],
 	"name" : "RubPluggableTextMorphExample2",
-	"pools" : [
-		 ],
-	"super" : "Model",
-	"type" : "normal" }
+	"type" : "normal"
+}

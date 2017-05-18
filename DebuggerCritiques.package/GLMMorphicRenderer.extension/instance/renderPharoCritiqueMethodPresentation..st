@@ -1,0 +1,3 @@
+*DebuggerCritiques
+renderPharoCritiqueMethodPresentation: aSmalltalkMethodPresentation 
+	^ GLMMorphicPharoCritiqueMethodRenderer render: aSmalltalkMethodPresentation from: self

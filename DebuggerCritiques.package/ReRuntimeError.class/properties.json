@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "RubPluggableTextMorph",
-	"category" : "Seminar-Kevin",
+	"super" : "ReReplaceNodeCritique",
+	"category" : "DebuggerCritiques",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"editingMode"
+		"errorContext"
 	],
-	"name" : "SimpleMethodEditor",
+	"name" : "ReRuntimeError",
 	"type" : "normal"
 }

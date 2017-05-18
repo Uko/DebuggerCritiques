@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Seminar-Kevin",
+	"category" : "DebuggerCritiques",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "SouthParkElementary",
+	"name" : "ReRuntimeChecker",
 	"type" : "normal"
 }

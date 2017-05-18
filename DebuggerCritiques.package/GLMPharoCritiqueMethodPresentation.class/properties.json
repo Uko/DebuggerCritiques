@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "GLMPharoMethodPresentation",
+	"category" : "DebuggerCritiques",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"editingModeBlock",
+		"textModelBlock"
+	],
+	"name" : "GLMPharoCritiqueMethodPresentation",
+	"type" : "normal"
+}

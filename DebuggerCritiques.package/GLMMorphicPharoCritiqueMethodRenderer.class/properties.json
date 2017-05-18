@@ -1,15 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "StandardWindow",
-	"category" : "Seminar-Kevin",
+	"super" : "GLMMorphicPharoMethodRenderer",
+	"category" : "DebuggerCritiques",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"method",
-		"editor",
 		"editingMode"
 	],
-	"name" : "SimpleMethodViewWindow",
+	"name" : "GLMMorphicPharoCritiqueMethodRenderer",
 	"type" : "normal"
 }

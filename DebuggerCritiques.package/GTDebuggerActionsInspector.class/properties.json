@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
-	"category" : "Seminar-Kevin",
+	"super" : "GTDebuggerInspector",
+	"category" : "DebuggerCritiques",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "SouthParkElementary",
+	"name" : "GTDebuggerActionsInspector",
 	"type" : "normal"
 }
