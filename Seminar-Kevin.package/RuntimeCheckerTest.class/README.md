@@ -1,1 +1,0 @@
-A RuntimeCheckerTest is a test class for testing the behavior of RuntimeChecker
