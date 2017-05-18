@@ -1,3 +1,8 @@
+------
+Project originaly developed by Kevin Schibli and Claudio Corrodi!
+------
+
+
 # Code Critiques in the Pharo Debugger
 
 To enable the custom debugger and set it as the default debugger, execute the 
