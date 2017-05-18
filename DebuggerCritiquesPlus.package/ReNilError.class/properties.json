@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "TReRuntimeError classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ReNilError",
+	"commentStamp" : "",
+	"super" : "ReRuntimeError",
+	"traitcomposition" : "TReRuntimeError",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "DebuggerCritiquesPlus"
+}

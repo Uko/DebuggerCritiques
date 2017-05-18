@@ -1,3 +1,3 @@
 accessing
 defaultTitle
-	^ 'Critique'
+	^ 'Critique Debugger'

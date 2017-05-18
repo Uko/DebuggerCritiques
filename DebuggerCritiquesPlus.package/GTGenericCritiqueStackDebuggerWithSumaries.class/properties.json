@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "YuriyTymchuk 5/18/2017 16:44",
-	"super" : "GTGenericStackDebugger",
-	"category" : "DebuggerCritiques",
+	"super" : "GTGenericCritiqueStackDebugger",
+	"category" : "DebuggerCritiquesPlus",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "GTGenericCritiqueStackDebugger",
+	"name" : "GTGenericCritiqueStackDebuggerWithSumaries",
 	"type" : "normal"
 }

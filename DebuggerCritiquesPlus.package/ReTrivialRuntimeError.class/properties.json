@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "ReTrivialCritique",
+	"category" : "DebuggerCritiquesPlus",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"errorContext"
+	],
+	"name" : "ReTrivialRuntimeError",
+	"type" : "normal"
+}

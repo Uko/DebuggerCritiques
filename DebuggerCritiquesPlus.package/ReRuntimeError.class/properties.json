@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "ReReplaceNodeCritique",
+	"category" : "DebuggerCritiquesPlus",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"errorContext"
+	],
+	"name" : "ReRuntimeError",
+	"type" : "normal"
+}

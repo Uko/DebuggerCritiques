@@ -1,0 +1,1 @@
+This debugger includes critiques from all the stack, + stack based critiques
