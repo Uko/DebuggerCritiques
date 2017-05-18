@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "BaselineOf",
+	"category" : "BaselineOfDebuggerCritiques",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BaselineOfDebuggerCritiques",
+	"type" : "normal"
+}
