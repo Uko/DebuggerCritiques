@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GTDebuggerInspector",
+	"category" : "DebuggerCritiquesPlus",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GTDebuggerActionsInspector",
+	"type" : "normal"
+}
